@@ -1,0 +1,356 @@
+<?php
+// POUR LE CAPTCHA
+require_once 'recaptcha/autoload.php';
+if(isset($_POST['submitpost'])){
+	if(isset($_POST['g-recaptcha-response'])){
+		$recaptcha = new \ReCaptcha\ReCaptcha('6LdoBOQUAAAAAAa6-BbjSuqM1As1_fDdweT_vBPO');
+		$resp = $recaptcha->verify($_POST['g-recaptcha-response']);
+		if ($resp->isSuccess()) {
+			var_dump('Captcha Valide !');
+		} else {
+			$errors = $resp->getErrorCodes();
+			var_dump('Captcha Invalide !');
+			var_dump($errors);
+		}
+	} else {
+		var_dump('Captcha non rempli  !');
+	}
+} 
+?>
+<!-- // POUR LES IMAGES -->
+<?php print_r($_FILES['file']['tmp_name']); ?> 
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+	
+		
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<link rel="stylesheet" href="css/lancerprojet_suite.css" /> 
+		<link rel="stylesheet" href="css/menu.css" />
+		<title> Lancez votre projet </title>
+		<link rel="icon" type="image/png" href="favicon2.png" />
+		<link rel="icon" href="./favicon2.png" type="image/png" sizes="16x16">
+
+	</head>
+	
+<header>
+	<div class ="menu">
+		<!-- MENU DEROULANT -->
+				<input type="checkbox" id="check">
+				<label for="check">
+
+					<i class="menub fas fa-bars" id="btn"></i>
+					<i class="fas fa-times" id="cancel"></i>
+				</label>
+				<div class="sidebar">
+					<header>My App</header>
+						  <ul>
+							<li><a class="click" href="#">&nbsp&nbsp <i class="fas fa-search"></i>Recherche</a></li>
+							<li><a class="click" href="#">&nbsp&nbsp <i class="fas fa-info"></i></i>Qui sommes-nous ?</a></li>
+							<li><a class="click" href="commentcamarche.html">&nbsp&nbsp <i class="fas fa-stream"></i>Comment ça marche ?</a></li>
+							<li><a class="click" href="#">&nbsp&nbsp <i class="fas fa-check"></i>Réussir votre projet</a></li>
+							<li><a class="click" href="#">&nbsp&nbsp <i class="fas fa-plus"></i>Lancer votre projet</a></li>
+							<!-- <li><a class="click" href="#">&nbsp&nbsp <i class="fas fa-shopping-cart"></i>Boutique</a></li> -->
+						  </ul>
+				</div>
+		<!-- Choisir le menu deroulante decale tout ou pas -->
+        <!-- <section></section>  -->
+
+		
+		<!--FIN  MENU DEROULANT -->
+				<ul class="tableau">
+					<li class="bouton"> <a  href="contact.html"> Contact</li> </a>
+					<li class="boutonbleu">Lancer votre projet</li>
+					<li	class="boutonimage"> <a  href="index.html"> <img class="finartlogo" src="imagemenu/finartlogo.png" alt="Logo du site" > </a>
+					<li class="boutonvert">Financer un projet</li>
+					<li class="bouton">Mon compte</li>
+					
+					<!-- <div class="inchallah"> -->
+					<!-- <form action=""> -->
+					<!-- <input type="search"> -->
+					<!-- <i class="fas fa-search"></i> -->
+					<!-- <!-- </form> -->		 
+				</ul>
+				<i class="menub fas fa-shopping-basket"></i>
+	</div>
+		
+</header>
+
+<body>
+
+
+<br>
+<br>
+
+<!-- VOTRE CONTENUE LES FDPS -->
+
+
+													<div  class="main">
+														<div  class="container_form">
+															<div  class="signup-content" style="margin-left: 410px;" >
+
+																<div  class="signup-form">
+																	<form method="POST" action="?" class="register-form" id="register-form" enctype="multipart/form-data" >
+																		<div class="form-row">
+																			<div class="form-group" style="margin-left:-600px">
+																			
+																			<!-- PARTIE IDENTIFICATION DU PROJET -->
+																			<div style="display:flex;">
+																			<div>
+																			<h1 style="width:600px;" > <b>VOTRE PROJET</b></h1>
+																				<p class="form-input" style="margin-left:0;margin-top: -10;">
+																					<label for="titre" >Titre <br>
+																						<input type="text" name="titre" id="titre" style="width: 500px;height: 35px;margin-top: 7px;"/>
+																					</label>
+																					
+																				</p>
+																				<p class="form-input" style="margin-left: 0;">
+																					<label for="description">
+																						Description du projet <br>
+																						<textarea class="trucadecrire" rows="10" cols="10" style="border: 1px solid #dba1a0;height: 195px;margin-top: 7px;"></textarea>
+																					</label>
+																				</p>
+																				<p class="form-input" style="margin-left: 0;">
+																					<label for="description">
+																						Quelles sont vos motivations ? <br>
+																						<textarea class="trucadecrire" rows="10" cols="10" style="border: 1px solid #dba1a0;height: 65px;margin-top: 7px;"></textarea>
+																					</label>
+																				</p>
+																				<!-- <p class="form-input" style="margin-left: 0;">   AFFECTER AU BACKOFFICE, CLASSER LA CATÉ PAR LE WEBMASTER--> 
+																					<!-- <label for="categorie-select">Quelle est la catégorie de votre projet ? <br> -->
+																						<!-- <select name="categorie" id="categorie-select" style="width: 500px;height: 45px;border-radius: 5px;border: 1px solid RGB(219,161,160);"> -->
+																							<!-- <option value="">Choisissez une option</option> -->
+																							<!-- <option value="art">Art</option> -->
+																							<!-- <option value="biographie">Biographie</option> -->
+																							<!-- <option value="culture">Culture</option> -->
+																							<!-- <option value="essai">Essai</option> -->
+																							<!-- <option value="histoire">Histoire</option> -->
+																							<!-- <option value="jeunesse">Jeunesse</option> -->
+																							<!-- <option value="sci-fi">Science-fiction</option> -->
+																							<!-- <option value="autre">Autre</option>					 -->
+																						<!-- </select> -->
+																					<!-- </label>	 -->
+																				<!-- </p> -->
+																				<!-- <p class="form-input" style="margin-left: 0;"> -->
+																				<!-- <label for="pays">Quel est le pays du projet ?<br> -->
+																				<!-- <select name="pays" style="width: 500px;height: 45px;border-radius: 5px;border: 1px solid RGB(219,161,160);"> -->
+																					<!-- <option value="France" selected="selected" >France </option> -->
+
+																					<!-- <option value="Afghanistan">Afghanistan </option> -->
+																					<!-- <option value="Afrique_Centrale">Afrique_Centrale </option> -->
+																					<!-- <option value="Afrique_du_sud">Afrique_du_Sud </option> -->
+																					<!-- <option value="Albanie">Albanie </option> -->
+																					<!-- <option value="Algerie">Algerie </option> -->
+																					<!-- <option value="Allemagne">Allemagne </option> -->
+																				<!-- </select> -->
+																				<!-- </label>  -->
+																				<!-- </p> -->
+																				</div>
+																				<div style="margin-left:20;margin-top:5px;">
+																				<!-- <p class="form-input" style="margin-left: 0;"> -->
+																					<!-- <label for="lien_site">Ajoutez un lien web <br> -->
+																					<!-- <input type="text" name="lien_site" id="lien_site" placeholder="https://" style="width: 500px;"/> -->
+																					<!-- </label> -->
+																				<!-- </p> -->
+																				<!-- <p class="form-input" style="margin-left: 0;"> -->
+																					<!-- <label for="lien_video">Ajoutez une vidéo de présentation <br> -->
+																					<!-- <input type="text" name="lien_video" id="lien_video" placeholder="https://" style="width: 500px;"/> -->
+																					<!-- </label> -->
+																				<!-- </p>	 -->
+																				<p class="form-input" style="margin-left: 0;margin-top: 53px">
+																					<label for="images">Déposer des fichier images <i><span style="margin-left:100;text-transform:none">Des images de votre projet</span></i> <br>
+																					<input type="file" name="file[]" multiple id="images"  style="width: 500px;margin-top: 7px;height: 35px; padding: 5" />	
+																					</label>
+																				</p>
+																				<p class="form-input" style="margin-left: 0;margin-top: 0px;">
+																				  <label for="montant_objectif"  >Quel est votre objectif de financement en euros ?<br>
+																				  <input placeholder="Sélectionner le montant objectif" type="number" id="montant_objectif" step="0.01" contenteditable="true" min="0" style="width: 500px;height: 40px;margin-top: 7px;"/>
+																					</label> 
+																				</p>
+																				<p class="form-input" style="margin-left:0;margin-top: 40px;">
+																					<label for="date_debut_campagne" style="width: 225px"> Date de début de campagne : <br>
+																					<input type="date" id="start" name="trip-start"  min="2020-01-01" max="2100-12-31" style="width: 225px;margin-top: 7px;height: 35px;padding: 0;"/>
+																					</label>
+																																								
+																					<label for="date_fin_campagne" style="margin-left: 75;"> Date de fin de campagne : <br>
+																					<input type="date" id="end" name="trip-end" min="2020-01-01" max="2100-12-31" style="width: 200px;margin-top: 7px;height: 35px;padding: 0;" />
+																					</label>
+																																							
+
+																				</p>
+																				<!-- <p class="form-input" style="margin-left: 0;margin-top: 50;"> WEBMASTER AUSSI, backoffice définisse des récompenses, par exemple au minimum 4 récompenses, menu droulant de 1 à 6, décrire ce qu'est la récompense et le montant -->
+																					<!-- <label for="montant_mini">Indiquez le montant minimum de soutien (€) <br> -->
+																						<!-- <input type="number" name="montant_mini" id="montant_mini" min="0" style="width: 500px"/> -->
+																					<!-- </label> -->
+
+																				<!-- </p> -->
+																				<!-- <p class="form-input" style="margin-left:0"> -->
+																					<!-- <label for="montant_max">Et ici, le montant maximum (€) <br> -->
+																					<!-- <input type="number"  name="montant_max" id="montant_max"  min="0" style="width: 500px"/> -->
+																					<!-- </label> -->
+																				<!-- </p> -->
+																				<!-- <p class="form-input" style="margin-left: 0;"> -->
+																				  <!-- <label for="montant_defaut" >Indiquez le montant en euros par défaut pour soutenir<br> -->
+																				  <!-- <input placeholder="Montant par défaut" type="number" id="montant_defaut" step="0.01" contenteditable="true"  min="0" style="width: 500px"/> -->
+																					<!-- </label>  -->
+																				<!-- </p>	 -->
+
+																				<!-- <p class="form-input" style="margin-left: 0;"> -->
+																				<!-- <label for="fin-select">Et la fin de votre campagne ?<br> -->
+																					<!-- <select name="fin" id="fin-select" style="width: 500px;height: 45px;border-radius: 5px;border: 1px solid RGB(219,161,160);"> -->
+																						<!-- <option value="">Choisissez une option</option> -->
+																						<!-- <option value="goal_reach">Objectif atteint</option> -->
+																						<!-- <option value="ending_date">Date de fin atteinte</option> -->
+																						<!-- <option value="goalandend">Objectif et date de fin atteints</option> -->
+																						<!-- <option value="endless_campagne">La campagne ne s’arrête pas</option> -->
+																					<!-- </select> -->
+																					<!-- </label>  -->
+																				<!-- </p> -->
+																				<p class="form-input" style="margin-left:0;margin-top:5px"> 
+																				<label for="description"> Décriver les récompenses pour vos "contributeurs"<br>
+																					<textarea class="trucadecrire" rows="10" cols="10" style="border: 1px solid #dba1a0;height: 65px;margin-top: 7px;" placeholder="Écrivez ici"></textarea>
+																					</label> 
+																				</p> 
+																				</div>
+																				</div>
+																				<!-- PARTIE RÉCOMPENSES WEBMASTER AUSSI -->
+																				
+																				<!-- <p class="form-input" style="margin-left: 0;margin-top:14px"> -->
+																					<!-- <label for="recomp_min" style="width: 400px;">Renseignez le montant minimal pour une récompense<br> -->
+																					<!-- <input type="number" name="recomp_min" id="recomp_min"  min="0" style="width: 500px;"/> -->
+																					<!-- </label> -->
+
+																				<!-- </p> -->
+																				<!-- <p class="form-input" style="margin-left: 0"> -->
+																					<!-- <label for="recomp_max">Montant maximal pour une récompense<br> -->
+																					<!-- <input type="number"  name="recomp_max" id="recomp_max" min="0" style="width: 500px;"/> -->
+																					<!-- </label> -->
+																				<!-- </p> -->
+																				<!-- <p class="form-input" style="margin-left: 0;"> -->
+																					<!-- <label for="images_recomp">Charger une photo de la récompense !<br> -->
+																					<!-- <input type="file" name="images_recomp" id="images_recomp"  multiple="multiple" style="width: 500px;"/>	 -->
+																					<!-- </label> -->
+																				<!-- </p> -->
+
+																				<!-- <p class="form-input" style="margin-left: 0;"> -->
+																				 <!-- <label for="montant_defaut">Quantité disponible pour les récompenses : <br> -->
+																				  <!-- <input placeholder="Sélectionner une quantité" type="number" id="qté step="1" contenteditable="true" min="0" style="width: 500px;"/> -->
+																				  <!-- </label> -->
+																				<!-- </p> -->
+																				<!-- <p class="form-input" style="margin-left:0;"> -->
+																				  <!-- <label for="mois_livraison">Estimer une date de livraison : <br> -->
+																						<!-- <input type="date" id="start" name="trip-start" -->
+																						   <!-- min="2020-01-01" max="2100-12-31" style="width: 500px;" /> -->
+																					<!-- </label> -->
+																				<!-- </p> -->
+																				
+																				</br>
+
+																				<!-- PARTIE SOUMISSION PROJET -->
+																				</br>
+																				  <!-- <div class="form-check" style="margin-top:-25px;"> -->
+																					<!-- <input type="checkbox" name="valide" id="valide"/> -->
+																					<!-- <label for="exampleCheck1" style="text-transform: none;">En continuant, j'accepte les conditions générales d'utilisation</label> -->
+																				  <!-- </div> -->
+																					<br>										
+																			</div>
+																		</div>
+																		<div class="form-submit"  style="margin-left:-415;margin-top: 20px;">
+																			<input type="submit" value="Envoyer" class="submit" id="submit" name="submit" style="margin-right: 205px;"/>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+<script>
+console.log(document.getElementById("images"));
+</script>
+
+</body>
+
+<!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-sm-12 col-md-6"> -->
+            <!-- <h6>A propos</h6> -->
+            <!-- <p class="text-justify"></p> -->
+          <!-- </div> -->
+		  <div class="col-xs-6 col-md-3">
+            <h6>A propos</h6>
+            <ul class="footer-links">
+            Finart-culture est une plateforme de promotion culturelle et artistique. Une boutique en ligne est disponible.
+            </ul>
+			<!-- <ul>Administrateur</ul> -->
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6> Informations </h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/"> Mentions légales</a></li>
+			  <li><a class="ahref" href="contact.html"> Contact  </a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">Conditions générales de vente</a></li>
+              <li><a href="http://scanfcode.com/contact/">Politique de confidentialité</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Newsletter</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">Abonnez-vous à notre Newsletter</a></li>
+			  <div class="nwletter"><input class="" type="email" placeholder="Adresse e-mail" name="e-mail" required></div>
+              
+
+            </ul>
+          </div>
+		   <div class="col-xs-6 col-md-3">
+            
+          <br>
+              <a  href="index.html"> <img class="finartlogo" src="imagemenu/finartlogo.png" alt="Logo du site" > </a>
+              
+
+            
+          </div>
+		  
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 Tous droits reservés par
+         <a>Finartculture</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+               
+            </ul>
+          </div>
+        </div>
+      </div>
+	</footer>
+  <!-- Site footer -->
+
+
+	
+</html>

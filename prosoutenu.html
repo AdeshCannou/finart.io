@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="icon" href="./favicon2.png" type="image/png" sizes="16x16">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu.css" />
+		<link rel="stylesheet" type="text/css" href="css/cssprof.css" />
+	</head>
+<body>	
+<header>
+	<div class ="menu">
+		
+				<input type="checkbox" id="check">
+            <label for="check">
+				<div class="hoverrr">
+                <i class="menub fas fa-bars" id="btn">  </i>
+				<p class="menuplace">MENU </p>
+				</div>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+        <div class="sidebar">
+            <header>My App</header>
+                  <ul>
+                    <li><a class="click" href="#">&nbsp&nbsp <i class="fas fa-search"></i>Recherche</a></li>
+                    <li><a class="click" href="quisommenous.html">&nbsp&nbsp <i class="fas fa-info"></i></i>Qui sommes-nous ?</a></li>
+                    <li><a class="click" href="commentcamarche.html">&nbsp&nbsp <i class="fas fa-stream"></i>Comment ça marche ?</a></li>
+                    <li><a class="click" href="reussir.html">&nbsp&nbsp <i class="fas fa-check"></i>Réussir votre projet</a></li>
+                    <li><a class="click" href="lancerprojet.html">&nbsp&nbsp <i class="fas fa-plus"></i>Lancer votre projet</a></li>
+                    <!-- <li><a class="click" href="boutique.html">&nbsp&nbsp <i class="fas fa-shopping-cart"></i>Boutique</a></li> -->
+                  </ul>
+        </div>
+				
+		<ul class="tableau">
+			<li class="bouton"> <a class="ahref" href="boutique.html"> Boutique  </a> </li> 
+			<li class="boutonbleu" > Lancer votre projet</a>  </li>
+			<li	class="boutonimage"> <a  href="index.html"> <img class="finartlogo" src="imagemenu/finartlogo.png" alt="Logo du site" > </a> </li>
+			<li class="boutonvert"> Aider un projet</li>
+			<li class="bouton"> <a class="ahref" href="se_connecter.html"> Mon compte </a></li>	 
+		</ul>
+			<div class="hoverrr">
+			<p class="panierplace">PANIER </p>
+			<a href="panier.html">
+			<i class="menub fas fa-shopping-basket">  </i> 
+			</a>
+			</div>
+	</div>
+		
+</header>
+
+
+
+
+
+<div class="parallax">
+		<div id="titrepara">
+		<h1> Mon Compte </h1>
+		</div>
+</div>
+
+<div class="navbbar">
+  <a href="#home">Tableau de bord</a>
+  <a href="#news">Projets</a>
+  <div class="dropdoown">
+    <button class="dropbtn">Mon compte 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdoown-content">
+      <a href="#" class="activee">Profil</a>
+      <a href="#">Mot de passe</a>
+      <a href="#">Contreparties</a>
+      <a href="#">Se déconnecter</a>
+    </div>
+   </div>
+	<button class="btnpro">Soumettre un projet 
+    </button>
+</div>
+<div class="GEN">
+<div class="ourpro">
+<div class="contenair">
+<div id="divLeft">
+	<p class="txt-img">Image de profil</h3>
+</div>
+<div id="divRight">
+<h2>Infos de base</h2>
+<p class="txt-pse">Pseudonyme: </p>
+<p>PSEUDO</p>
+<form method="post" action="traitement.php">
+    <p>
+        <label for="pseudo">Prénom:  </label><br/>
+        <input type="text" name="pseudo" class="infos" size="30" maxlength="10" />
+    </p>
+</form>
+<form method="post" action="traitement.php">
+    <p>
+        <label for="pseudo">Nom:   </label><br/>
+        <input type="text" name="pseudo" class="infos" size="30" maxlength="10" />
+    </p>
+</form>
+   <p>
+       <label for="ameliorer">A propos de moi:  </label><br />
+       <textarea name="ameliorer" class="aprop"></textarea>
+   </p>
+   <p>
+       <label for="ameliorer">Info profil:  </label><br />
+       <textarea name="ameliorer" class="aprop"></textarea>
+   </p>
+</div>
+</div>
+</div>
+</body>
+</html>

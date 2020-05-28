@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+	
+		
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="icon" href="./favicon2.png" type="image/png" sizes="16x16">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/panier.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu.css" />
+
+	</head>
+<body>	
+
+<header>
+	<div class ="menu">
+		
+				<input type="checkbox" id="check">
+            <label for="check">
+				<div class="hoverrr">
+                <i class="menub fas fa-bars" id="btn">  </i>
+				<p class="menuplace">MENU </p>
+				</div>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+        <div class="sidebar">
+            <header>My App</header>
+                  <ul>
+                    <li><a class="click" href="#">&nbsp&nbsp <i class="fas fa-search"></i>Recherche</a></li>
+                    <li><a class="click" href="quisommenous.html">&nbsp&nbsp <i class="fas fa-info"></i></i>Qui sommes-nous ?</a></li>
+                    <li><a class="click" href="commentcamarche.html">&nbsp&nbsp <i class="fas fa-stream"></i>Comment ça marche ?</a></li>
+                    <li><a class="click" href="reussir.html">&nbsp&nbsp <i class="fas fa-check"></i>Réussir votre projet</a></li>
+                    <li><a class="click" href="lancerprojet.html">&nbsp&nbsp <i class="fas fa-plus"></i>Lancer votre projet</a></li>
+                    <!-- <li><a class="click" href="boutique.html">&nbsp&nbsp <i class="fas fa-shopping-cart"></i>Boutique</a></li> -->
+                  </ul>
+        </div>
+				
+		<ul class="tableau">
+			<li class="bouton"> <a class="ahref" href="boutique.html"> Boutique  </a> </li> 
+			<li class="boutonbleu" > Lancer votre projet</a>  </li>
+			<li	class="boutonimage"> <a  href="index.html"> <img class="finartlogo" src="imagemenu/finartlogo.png" alt="Logo du site" > </a> </li>
+			<li class="boutonvert"> Aider un projet</li>
+			<li class="bouton"> <a class="ahref" href="se_connecter.html"> Mon compte </a></li>	 
+		</ul>
+			<div class="hoverrr">
+			<p class="panierplace">PANIER </p>
+			<a href="panier.html">
+			<i class="menub fas fa-shopping-basket">  </i> 
+			</a>
+			</div>
+	</div>
+		
+</header>
+
+
+
+
+<div class="parallax" style=' margin-bottom:50px;'>
+		<div id="titrepara">
+		<h1> Mon Panier </h1>
+		</div>
+
+</div>
+
+	<div class="structure">
+	<table>
+		<tr class='un'>
+			<td colspan="3" class ='name'>Produit</td>
+			<td class ='prix'>Prix</td>
+			<td class ='quantité'>Quantité</td>
+			<td class ='soustotal'>Sous-total</td>
+		</tr>
+			<tr class='deux'>
+				<td class ='action'><i class="fas fa-times"></i></td>
+				<td class='img'><a href='' ><img src='image/1.jpg'></img></a></td>
+				<td class ='name2'>Nom du prduit</td>
+				<td class ='prix2'>19,00$</td>
+				<td class ='quantité2'><input type="number" id="quantity_5e8f25237fcfc" class="input1" step="1" min="0" max="" name="cart[cf2226ddd41b1a2d0ae51dab54d32c36][qty]" value="1" title="Qté" size="1" inputmode="numeric"></td>
+				<td class ='soustotal2'>19,00$</td>
+			</tr>
+	</table>
+	
+	<table>
+		<tr>
+			<td class='aa'><a class="boutonvert3">Mettre à jour le panier</a></td>
+		</tr>
+	</table>
+	
+	<div class='st'>
+		<h2>Contenu du panier</h2>
+			<table class='trois'>
+				<tr class='totalpanier'>
+					<td class='un1'>Sous-total</td>
+					<td>19,00$</td>
+				</tr>
+				<tr class='totalpanier'>
+					<td class='un1'>Total</td>
+					<td>19,00$</td>
+				</tr>
+			</table>
+			<a class="boutonvert2">Valider la commande</a>
+	</div>
+	</div>
+</body>
+
+
+<!-- Site footer -->
+   <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-sm-12 col-md-6"> -->
+            <!-- <h6>A propos</h6> -->
+            <!-- <p class="text-justify"></p> -->
+          <!-- </div> -->
+		  <div class="col-xs-6 col-md-3">
+            <h6>A propos</h6>
+            <ul class="footer-links">
+            Finart-culture est une plateforme de promotion culturelle et artistique. Une boutique en ligne est disponible.
+            </ul>
+			<!-- <ul>Administrateur</ul> -->
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6> Informations </h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/"> Mentions légales</a></li>
+			  <li><a class="ahref" href="contact.html"> Contact  </a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">Conditions générales de vente</a></li>
+              <li><a href="http://scanfcode.com/contact/">Politique de confidentialité</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Newsletter</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">Abonnez-vous à notre Newsletter</a></li>
+			  <div class="nwletter"><input class="" type="email" placeholder="Adresse e-mail" name="e-mail" required></div>
+              
+
+            </ul>
+          </div>
+		   <div class="col-xs-6 col-md-3">
+            
+          <br>
+              <a  href="index.html"> <img class="finartlogo" src="imagemenu/finartlogo.png" alt="Logo du site" > </a>
+              
+
+            
+          </div>
+		  
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 Tous droits reservés par
+         <a>Finartculture</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+               
+            </ul>
+          </div>
+        </div>
+      </div>
+	</footer>
+
+  <!-- Site footer -->
+
+
+	
+</html>

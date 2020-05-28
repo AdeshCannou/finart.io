@@ -1,0 +1,156 @@
+.project {
+width:1170px;
+margin:auto;
+margin-bottom:100px;
+margin-top:50px;	
+}
+
+.gtxt {
+	text-align: center;
+	font-size: 55px;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.box {
+  width: 251px;
+  height: 370px;
+  margin: 15px;
+  border: 1px solid #C0C0C0;
+  display: inline-block;
+}
+
+.overlay-image {
+ position: relative;
+ width: 100%;
+}
+/* Image originale */
+.allignementimg .image {
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+.conteneur {
+    display: flex;
+    width: 1170px;
+    margin: auto;
+}
+
+
+.pm {
+    color: black !important;
+  padding-left: 10px;
+}
+
+.pam {
+    padding-left: 10px;
+    font-size: 20px;
+  padding-left: 10px;
+}
+
+.containaire {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.containaire:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+  width: 200px ;
+  height: 200px;
+}
+
+.imgtqt {
+  padding-left: 1px;
+  position: absolute;
+  width: 200px;
+  height: auto;
+  left: 0;
+}
+
+.title {
+  position: absolute;
+  width: 200px;
+  left: 0;
+  top: 30;
+  font-weight: 200;
+  font-size: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+  opacity: 0;
+}
+
+.containaire:hover .title {
+  top: 10px;
+  opacity: 1;
+}
+
+.button {
+  position: absolute;
+  width: 150px;
+  left:0;
+  top: 100px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  margin-left: 25px;
+}
+
+.testgros {
+    font-size: 12px;
+}
+
+.contientgros {
+    border: 1px solid #DDDDDD;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.tag 
+{
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+    background-color: #51aeed;
+    padding: 3px 5px;
+    border-radius: 10px;
+    margin: 2px;
+    font-size: 14px;
+}
+
+.link-theme {
+    text-decoration: none;
+    color: white;
+}
+.button a {
+  width: 200px;
+  height: 200px;
+  padding: 12px 22px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.containaire:hover .button {
+  opacity: 1;
+}

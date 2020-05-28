@@ -1,0 +1,204 @@
+body {
+  background-color: #eeeeee;
+}
+.navbbar {
+  overflow: hidden;
+  background-color: white;
+  width: 97%;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 2px solid #C8C8C8;
+}
+
+.navbbar a {
+  float: left;
+  font-size: 16px;
+  color: #51aeed;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.lienboutton {
+  height: 40px;
+  width: auto;
+}
+.dropdoown {
+  float: left;
+  overflow: hidden;
+}
+#divLeft {
+  /*background: red;*/
+  margin-right: 10px !important;
+  background-color:  white;
+  width: 50%;
+  height: 200px;
+  float: left;
+  margin: auto;
+  border: none;
+  margin-bottom: 50px;
+}
+.txt-img {
+  font-size: 25px;
+  padding: 20px;
+}
+
+#divRight {
+  padding-top: 20px;
+  margin-left: 10px !important;
+  /*background: blue;*/
+  background-color: white;
+  width: 48%;
+  /*height: 1000px;*/
+  float: left;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border: none;
+  margin-bottom: 50px;
+  
+}
+
+.contenair  {
+  width: 1300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.dropdoown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #51aeed;
+  padding: 14px 16px;
+  font-family: inherit;
+  margin: 0;
+}
+
+#ouais {
+  color: #51aeed;
+}
+
+.infos {
+  background-color:   #EFEFEF;
+  border: none;
+  border-radius:  5px;
+  width:  585px;
+  height: 40px;
+  padding-left:  5px;
+}
+
+.infos2 {
+  background-color:   #EFEFEF;
+  border: none;
+  border-radius:  5px;
+  width:  550px;
+  height: 40px;
+    padding-left:  5px;
+}
+.aprop {
+  border: none;
+  border-radius:  5px;
+  background-color:  #EFEFEF;
+  width: 585px;
+  height: 100px;
+  padding-left:  5px;
+}
+
+.lbl-pro-acceuil {
+  padding-left: 20px;
+}
+.areamdp {
+  background-color: white;
+  margin-top: 50px !important;
+  width:  1300px;
+  height:   auto;
+  border: none;
+  margin: auto;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.navbbar a:hover, .dropdoown:hover .dropbtn {
+  background-color: #51aeed;
+  color: white;
+}
+
+.boutton {
+    background-color: rgb(24, 165, 214);
+    color: white;
+    /* padding: 14px 10px; */
+    border: 1px solid;
+    cursor: pointer;
+    width: 20%;
+	transition: background-color 150ms ease-in-out 0s, color 100ms ease-in 0s;
+	transition-property: background-color, color;
+    transition-duration: 150ms, 100ms;
+    transition-timing-function: ease-in-out, ease-in;
+    transition-delay: 0s, 0s;
+	/* display: block; */
+	/* margin : auto; */
+	margin-top:10px;
+	/* margin-bottom:10px; */
+	border-radius:5px;
+	display:inline;
+	/* margin-left:50px; */
+	/* margin-right:auto; */
+	height:3.75em;
+  cursor: pointer;
+ 
+}
+
+
+
+.boutton:hover {
+    background-color: rgb(24, 110, 214);
+	color:white;
+}
+.dropdoown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdoown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdoown-content a:hover {
+  background-color: RGB(219,161,160);
+}
+
+.dropdoown:hover .dropdoown-content {
+  display: block;
+}
+
+.btnpro {
+  font-size: 16px;  
+  margin: 0;
+  margin-top: 9px;
+  float: right;
+  margin-right: 10px;
+  padding: 4px 5px 4px 10px;
+  background-color: #61ce70;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+a.activee{
+  color: white;
+  background-color: #51aeed;
+}

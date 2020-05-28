@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+	
+		
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="icon" href="./favicon2.png" type="image/png" sizes="16x16">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="css/creer_un_compte.css" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js%22%3E"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<link rel="stylesheet" type="text/css" href="css/menu.css" />
+	</head>
+<body>	
+<header>
+	<div class ="menu">
+		
+				<input type="checkbox" id="check">
+            <label for="check">
+				<div class="hoverrr">
+                <i class="menub fas fa-bars" id="btn">  </i>
+				<p class="menuplace" style="margin-top:29px;">MENU </p>
+				</div>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+        <div class="sidebar">
+            <header>My App</header>
+                  <ul>
+                    <li><a class="click" href="#">&nbsp&nbsp <i class="fas fa-search"></i>Recherche</a></li>
+                    <li><a class="click" href="quisommenous.html">&nbsp&nbsp <i class="fas fa-info"></i></i>Qui sommes-nous ?</a></li>
+                    <li><a class="click" href="commentcamarche.html">&nbsp&nbsp <i class="fas fa-stream"></i>Comment ça marche ?</a></li>
+                    <li><a class="click" href="reussir.html">&nbsp&nbsp <i class="fas fa-check"></i>Réussir votre projet</a></li>
+                    <li><a class="click" href="lancerprojet.html">&nbsp&nbsp <i class="fas fa-plus"></i>Lancer votre projet</a></li>
+                    <!-- <li><a class="click" href="boutique.html">&nbsp&nbsp <i class="fas fa-shopping-cart"></i>Boutique</a></li> -->
+                  </ul>
+        </div>
+				
+		<ul class="tableau">
+			<li class="bouton"> <a class="ahref" href="boutique.html"> Boutique  </a> </li> 
+			<li class="boutonbleu" > Lancer votre projet</a>  </li>
+			<li	class="boutonimage"> <a  href="index.html"> <img class="finartlogo" src="imagemenu/finartlogo.png" alt="Logo du site" > </a> </li>
+			<li class="boutonvert"> Aider un projet</li>
+			<li class="bouton"> <a class="ahref" href="se_connecter.html"> Mon compte </a></li>	 
+		</ul>
+			<div class="hoverrr">
+			<p class="panierplace">PANIER </p>
+			<a href="panier.html">
+			<i class="menub fas fa-shopping-basket">  </i> 
+			</a>
+			</div>
+	</div>
+		
+</header>
+
+
+
+
+<div class="parallax">
+		<div id="titrepara">
+		<h1> Créer un compte </h1>
+		</div>
+
+</div>
+
+<!-- VOTRE CONTENUE LES FDPS -->
+
+</body>
+		
+		<div id="contain2">
+            <!-- zone de connexion -->
+            
+            <form action="verification.php" method="POST">
+                <!-- <center><h1>Création d'un compte </h1></center> -->
+                <!-- <br> -->
+				
+				<label><b>Nom d'utilisateur</b></label>
+                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+				
+				<label><b>Nom</b></label>
+                <input type="text" placeholder="Entrer votre nom" name="username" required>
+				
+				<label><b>Prénom</b></label>
+                <input type="text" placeholder="Entrer votre prénom" name="username" required>
+				
+				<label><b>Adresse e-mail</b></label>
+                <input type="email" placeholder="Entrer votre adresse e-mail" name="username" required>
+
+                <label><b>Mot de passe</b></label>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+				
+				<label><b>Confirmer mot de passe</b></label>
+                <input type="password" placeholder="Confirmer mot de passe" name="password" required>
+				
+				<div class="g-recaptcha" data-sitekey="6LdoBOQUAAAAAKurzsksDK0qvjIlypir8H_zLf6E"></div>
+				
+				 <input type="submit" id='submit' value='Créer un compte' >
+				 <center><a>Vous avez déjà un compte existant ? </a><a id="sc" href="se_connecter.html">Connectez-vous !</a></center>
+                <!-- <label><b>xxxxxxxxxx</b></label> -->
+                <!-- <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required> -->
+
+                <!-- <label><b>xxxxxxxxx</b></label> -->
+                <!-- <input type="password" placeholder="Entrer le mot de passe" name="password" required> -->
+
+                <!-- <input type="submit" id='submit' value='Se connecter' > -->
+                <!-- <?php -->
+                <!-- if(isset($_GET['erreur'])){ -->
+                    <!-- $err = $_GET['erreur']; -->
+                    <!-- if($err==1 || $err==2) -->
+                        <!-- echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>"; -->
+                <!-- } -->
+                <!-- ?> -->
+            </form>
+        </div>
+
+</body>
+<!-- Site footer -->
+  <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-sm-12 col-md-6"> -->
+            <!-- <h6>A propos</h6> -->
+            <!-- <p class="text-justify"></p> -->
+          <!-- </div> -->
+		  <div class="col-xs-6 col-md-3">
+            <h6>A propos</h6>
+            <ul class="footer-links">
+            Finart-culture est une plateforme de promotion culturelle et artistique. Une boutique en ligne est disponible.
+            </ul>
+			<!-- <ul>Administrateur</ul> -->
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6> Informations </h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/"> Mentions légales</a></li>
+			  <li><a class="ahref" href="contact.html"> Contact  </a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">Conditions générales de vente</a></li>
+              <li><a href="http://scanfcode.com/contact/">Politique de confidentialité</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Newsletter</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">Abonnez-vous à notre Newsletter</a></li>
+			  <div class="nwletter"><input class="" type="email" placeholder="Adresse e-mail" name="e-mail" required></div>
+              
+
+            </ul>
+          </div>
+		   <div class="col-xs-6 col-md-3">
+            
+          <br>
+              <a  href="index.html"> <img class="finartlogo" src="imagemenu/finartlogo.png" alt="Logo du site" > </a>
+              
+
+            
+          </div>
+		  
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 Tous droits reservés par
+         <a>Finartculture</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+               
+            </ul>
+          </div>
+        </div>
+      </div>
+	</footer>
+  <!-- Site footer -->
+
+
+	
+</html>

@@ -1,0 +1,195 @@
+body {
+  background-color: #eeeeee;
+}
+.navbbar {
+  overflow: hidden;
+  background-color: white;
+  width: 1300px;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 2px solid #C8C8C8;
+}
+
+.navbbar a {
+  float: left;
+  font-size: 16px;
+  color: #51aeed;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.lienboutton {
+  height: 40px;
+  width: auto;
+}
+.dropdoown {
+  float: left;
+  overflow: hidden;
+}
+#divLeft {
+  /*background: red;*/
+  margin-right: 10px !important;
+  background-color:  white;
+  width: 50%;
+  height: 200px;
+  float: left;
+  margin: auto;
+  border: none;
+  margin-bottom: 50px;
+}
+.txt-img {
+  font-size: 25px;
+  padding: 20px;
+}
+
+#divRight {
+  padding-top: 20px;
+  margin-left: 10px !important;
+  /*background: blue;*/
+  background-color: white;
+  width: 48%;
+  /*height: 1000px;*/
+  float: left;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.contenair  {
+  width: 1300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.dropdoown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #51aeed;
+  padding: 14px 16px;
+  font-family: inherit;
+  margin: 0;
+}
+
+.infos {
+  background-color:   #EFEFEF;
+  border: none;
+  border-radius:  5px;
+  width:  585px;
+  height: 40px;
+  padding-left:  5px;
+}
+
+.infos2 {
+  background-color:   #EFEFEF;
+  border: none;
+  border-radius:  5px;
+  width:  550px;
+  height: 40px;
+    padding-left:  5px;
+}
+.aprop {
+  border: none;
+  border-radius:  5px;
+  background-color:  #EFEFEF;
+  width: 585px;
+  height: 100px;
+  padding-left:  5px;
+}
+
+.lbl-pro-acceuil {
+  padding-left: 20px;
+}
+.areamdp {
+  background-color: white;
+  margin-top: 50px !important;
+  width:  1300px;
+  height:   auto;
+  border: none;
+  margin: auto;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.navbbar a:hover, .dropdoown:hover .dropbtn {
+  background-color: #51aeed;
+  color: white;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-bottom: 40px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  float: left;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #51aeed;
+  border-radius: 10px;
+}
+
+.button1:hover {
+  background-color: #51aeed;
+  color: white;
+}
+.dropdoown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdoown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdoown-content a:hover {
+  background-color: RGB(219,161,160);
+}
+
+.dropdoown:hover .dropdoown-content {
+  display: block;
+}
+
+.btnpro {
+  font-size: 16px;  
+  margin: 0;
+  margin-top: 9px;
+  float: right;
+  margin-right: 10px;
+  padding: 4px 5px 4px 10px;
+  background-color: #61ce70;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+a.activee{
+  color: white;
+  background-color: #51aeed;
+}
