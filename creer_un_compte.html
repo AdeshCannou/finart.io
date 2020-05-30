@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="css/creer_un_compte.css" />
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js%22%3E"></script>
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 		<link rel="stylesheet" type="text/css" href="css/menu.css" />
 	</head>
 <body>	
@@ -76,7 +76,7 @@
 		<div id="contain2">
             <!-- zone de connexion -->
             
-            <form action="verification.php" method="POST">
+            <form action="POST" data-netlify="true">
                 <!-- <center><h1>Création d'un compte </h1></center> -->
                 <!-- <br> -->
 				
@@ -98,7 +98,8 @@
 				<label><b>Confirmer mot de passe</b></label>
                 <input type="password" placeholder="Confirmer mot de passe" name="password" required>
 				
-				<div class="g-recaptcha" data-sitekey="6LdoBOQUAAAAAKurzsksDK0qvjIlypir8H_zLf6E"></div>
+				<div class="g-recaptcha" data-netlify-recaptcha="true"></div>
+				<!-- <div class="g-recaptcha" data-sitekey="6LdoBOQUAAAAAKurzsksDK0qvjIlypir8H_zLf6E"></div> -->
 				
 				 <input type="submit" id='submit' value='Créer un compte' >
 				 <center><a>Vous avez déjà un compte existant ? </a><a id="sc" href="se_connecter.html">Connectez-vous !</a></center>
