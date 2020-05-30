@@ -49,8 +49,8 @@
 	 /* display: inline-block; */
 	margin-top:2em;
 	font-size:1.2em;
-	margin-left:20px;
-	float:left;
+	margin-right:20px;
+	/* float:left; */
 }
 
 .logo2 p{
@@ -104,7 +104,7 @@ form{
 }
 
 .jres {
-	margin-left: 6px;
+	/* margin-left: 6px; */
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -119,8 +119,8 @@ form{
 }
 
 .asur {
-	padding-left: 2px;
-	margin-left:-15px;
+	/* padding-left: 2px; */
+	/* margin-left:-15px; */
 	/* display:inline-block; */
 }
 .txtgr, .tentacles {
@@ -147,6 +147,7 @@ form{
 .fa-users{
 	text-align:center;
 	border:2px;
+	margin-left:24px;
 }
 
 .imgd {
