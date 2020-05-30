@@ -32,8 +32,8 @@
 }
 
 .memeligne{
-	display:flex;
-	margin-top:5em;
+	/* display:flex; */
+	margin-top:3em;
 }
 
 #divRight {
@@ -57,7 +57,7 @@
 	 padding-right: 10px;
 	 padding-top: 5px;
 	 /* margin-left:-1.75em; */
-	 display:inline-block;
+	 /* display:inline-block; */
 	 
 }
 
@@ -68,10 +68,10 @@
 
 .logo2{
 	justify-content:center;
-	text-align:center;
+	/* text-align:center; */
 	align-items:center;
-	margin-left:50px;
-	margin-top:5px;
+	/* margin-left:50px; */
+	margin-top:55px;
 }
 
 form{
@@ -490,7 +490,7 @@ border: 1px RGB(219,161,160) solid;
 	/* float:right */
 }
 
-#content1{
+#content2{
 	transform:translateX(0px);
 
 }
