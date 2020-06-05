@@ -174,7 +174,8 @@ body {
 
 /* BOUTON A DROITE */
 
-.fa-shopping-basket {
+.fa-shopping-bag
+{
 	/* TOUT CES ATTRIBUTS SONT LES MEMES QUE LE MENU DE GAUCHE */
 	right: 30px;
     top: -47px;
@@ -262,7 +263,7 @@ label #cancel{
 
 .menuplace {
 
-margin-left:85px;
+margin-left:80px;
 margin-top:38px;
 font-weight:bold;
 letter-spacing: 1.8px;
@@ -271,7 +272,7 @@ position:relative;
 }
 
 .panierplace{
-margin-right:91px;
+margin-right:78px;
 margin-top:38px;
 letter-spacing: 1.8px;
 text-transform: uppercase;
@@ -586,7 +587,7 @@ padding-top: 63px;
 .nwletter input[type=email] {
   background-color: white;
   padding-left:10px;
-  width:80%;
+  width:65%;
   border: 2px solid #ccc;
   margin-top:15px;
   border-radius: 4px;
@@ -595,10 +596,24 @@ padding-top: 63px;
   height:40px;
 }
 
+.fa-envelope{
+	font-size:30px;
+	margin-left:6px;
+	position:absolute;
+	margin-top: 20px;
+	/* padding-top:10px; */
+	/* margin-bottom:-20px */
+	
+	
+}
 
 
 
+.fa-envelope:hover{
 
+color: #3366cc;
+text-decoration: none;
+}
 
 
 
